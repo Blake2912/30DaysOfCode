@@ -1,0 +1,2 @@
+********************BILL********************
+Item Purchased		Quantity		Cost	Carrot				3			60	cream				2			40	gel				6			120Total payable amount: 220Thanks for shopping with us, please come again!********************END********************
