@@ -52,12 +52,12 @@ def billing(item_lists):
     print("Total Cost: {}".format(total_cost))
     is_bill_required = input("Do you want a bill?\n").lower()
     if is_bill_required == "yes":
-        give_bill(list_of_items, quantity_list, total_cost,cost_per_item_list)
+        give_bill(list_of_items, quantity_list, total_cost, cost_per_item_list)
     else:
         print("Thanks for shopping with us please come again!")
 
 
-def give_bill(items_list1, quantity, cost_total,cost_per_item):
+def give_bill(items_list1, quantity, cost_total, cost_per_item):
     n = len(items_list1)
     with open("bill.txt", 'w') as bill:
         bill.write("********************BILL********************\n")
