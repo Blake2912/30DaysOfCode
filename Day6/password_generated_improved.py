@@ -67,16 +67,12 @@ number_of_number = tkinter.IntVar()
 entry_no_of_numbers = tkinter.Entry(main_window, width=25, textvariable=number_of_number)
 entry_no_of_numbers.grid(row=2, column=3, sticky='nsew', columnspan=5)
 
-# number_of_number1 = int(number_of_number)
-
 Label_no_of_symbols = tkinter.Label(main_window, width=30, text="Enter the number of symbols req:")
 Label_no_of_symbols.grid(row=3, column=0, sticky='nsew')
 
 number_of_symbols = tkinter.IntVar()
 entry_no_of_symbols = tkinter.Entry(main_window, width=25, textvariable=number_of_symbols)
 entry_no_of_symbols.grid(row=3, column=3, sticky='nsew', columnspan=5)
-
-# number_of_symbols1 = int(number_of_symbols)
 
 output = tkinter.StringVar()
 
