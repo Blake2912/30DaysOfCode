@@ -16,9 +16,6 @@ def password_generator(no_of_letters, no_of_numbers, no_of_symbols):
     no_of_letters1 = no_of_letters.get()
     no_of_numbers1 = no_of_numbers.get()
     no_of_symbols1 = no_of_symbols.get()
-    # int(no_of_symbols)
-    # int(no_of_letters)
-    # int(no_of_numbers)
     password = []
     for i in range(0, no_of_letters1):
         password.append(random.choice(alphabets))
