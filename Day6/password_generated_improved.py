@@ -47,7 +47,7 @@ main_window.rowconfigure(7, weight=0)
 main_window.rowconfigure(8, weight=3)
 main_window.title("Password Generator")
 main_window.geometry('530x250-8-200')
-main_window.resizable(False,False)
+main_window.resizable(False, False)
 
 
 Label_no_of_letters = tkinter.Label(main_window, width=30, text="Enter the number of letters req:")
