@@ -4,7 +4,7 @@ import random
 import pyfiglet
 
 position_of_snakes = [3, 10, 13, 22, 38, 45, 51, 62, 77, 86, 93, 98]
-position_of_ladder = [5, 33, 23, 44, 50, 60, 89]
+position_of_ladder = [5, 12, 33, 23, 44, 50, 60, 89]
 position_of_player_one = 1
 position_of_player_two = 1
 
@@ -14,11 +14,11 @@ def roll_dice():
 
 
 def move_back():
-    return random.randint(1, 5)
+    return random.randint(1, 15)
 
 
 def bonus_moves():
-    return random.randint(1, 7)
+    return random.randint(1, 10)
 
 
 welcome_line = pyfiglet.figlet_format("Welcome to Snakes and Ladders")
@@ -85,7 +85,7 @@ while True:
                             move_ahead1 = bonus_moves()
                             position_of_player_two = position_of_player_two + move_ahead1
                             print("You have landed on a ladder so you move ahead by {} spaces".format(move_ahead1))
-                            print("Position of {0} -> {1}".format(player_two_name,position_of_player_two))
+                            print("Position of {0} -> {1}".format(player_two_name, position_of_player_two))
                     print("You are safe!")
                     print("Position of {0} -> {1}".format(player_two_name, position_of_player_two))
             else:
