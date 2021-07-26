@@ -17,6 +17,10 @@ def move_back():
     return random.randint(1, 5)
 
 
+def bonus_moves():
+    return random.randint(1, 7)
+
+
 welcome_line = pyfiglet.figlet_format("Welcome to Snakes and Ladders")
 print(welcome_line)
 print("This game is currently limited to two players only!")
@@ -49,6 +53,12 @@ while True:
                             if position_of_player_one <= 0:
                                 position_of_player_one = 1
                             print("Position of {0} -> {1}".format(player_one_name, position_of_player_one))
+                    for i in position_of_ladder:
+                        if position_of_player_one == i:
+                            move_ahead = bonus_moves()
+                            position_of_player_one = position_of_player_one + move_ahead
+                            print("You have landed on a ladder so you move ahead by {} spaces".format(move_ahead))
+                            print("Position of {0} -> {1}".format(player_one_name, position_of_player_one))
                     print("You are safe!")
                     print("Position of {0} -> {1}".format(player_one_name, position_of_player_one))
             else:
@@ -70,6 +80,12 @@ while True:
                             if position_of_player_two <= 0:
                                 position_of_player_two = 1
                             print("Position of {0} -> {1}".format(player_two_name, position_of_player_two))
+                    for i in position_of_ladder:
+                        if position_of_player_two == i:
+                            move_ahead1 = bonus_moves()
+                            position_of_player_two = position_of_player_two + move_ahead1
+                            print("You have landed on a ladder so you move ahead by {} spaces".format(move_ahead1))
+                            print("Position of {0} -> {1}".format(player_two_name,position_of_player_two))
                     print("You are safe!")
                     print("Position of {0} -> {1}".format(player_two_name, position_of_player_two))
             else:
