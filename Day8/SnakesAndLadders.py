@@ -4,6 +4,7 @@ import random
 import pyfiglet
 
 position_of_snakes = [3, 10, 13, 22, 38, 45, 51, 62, 77, 86, 93, 98]
+position_of_ladder = [5, 33, 23, 44, 50, 60, 89]
 position_of_player_one = 1
 position_of_player_two = 1
 
